@@ -1,0 +1,233 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box; /*make the conent of the box balanced*/
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 27px;  /*the height between lines*/
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1 h2 h3{    /* the titles let there space between the title and text 20px */
+padding-bottom: 20px;
+}
+p{    /* the text or the paragragh*/
+    margin: 10px 0; /* top and bottom 10 px and right and left 0*/
+}
+
+/*Utility Classes*/   /* sabta 3ala el kol y3any*/
+.container{    /* class by5aly el klam bade2 men awel el logo le nhayet el klam 3ala el ymen*/
+    max-width: 1100px;
+    overflow: auto;    /*el klam mya5rogesh men el page we yb2a 4akleha wa7esh*/
+    padding: 0,20px; /*fo2 we ta7t no msa7a ymen el 4mal msa7a 20px*/
+    margin: auto;
+}
+.text_primary{
+    color: darkblue;
+}
+.btn{
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    background-color: #333;
+    padding: 13px 20px;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: blue;
+    color: yellow;
+}
+.bg-dark{
+    background-color: #333;
+    color: #fff;
+}
+.btn-light{
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+
+
+/*NavBar*/
+#navbar{
+    background-color: darkcyan;
+    overflow: auto;
+}
+#navbar h1 img{
+    float: left;
+    width: 150px;
+    height: 85px;
+}
+#navbar a{
+    color: aliceblue;
+}
+#navbar ul{
+    float: right;
+    list-style: none;
+}
+#navbar li{
+    display: inline-block;
+}
+#navbar li a{
+    padding-top: 10px;
+    padding-inline: 20px;
+    display: block;
+}
+#navbar a:hover{ /* lama a7ot el mouse 3ala el kalema ely heya el a ely gowa el list*/
+    background-color: rgb(25, 0, 139);
+    color: yellow;
+    padding-bottom: 20px;
+}
+/*ShowCase Section*/
+#showcase{
+    background-image: url('../img/main\ page.jpg');
+    background-size: cover;
+    background-position: center center; /* make the photo top and botoom on center and righ and left on center also*/
+    height: 600px;
+}
+#showcase .showcase_content{
+    color: black;
+    text-align: center;
+    padding-top: 170px;
+}
+#showcase .showcase_content h1{
+    font-size: 60px;
+    line-height: 30px;
+}
+#showcase .showcase_content p{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    line-height: 30px;
+    font-size: 20px;
+}
+/*Home info section*/
+#home_info{
+    height: 500px; /* the height of the img*/
+}
+#home_info .info_img{
+    background-image: url('../img/main\ page\ 2.jpg');
+    background-size: cover; 
+    width: 50%; /*5aleto ya5od nos el saf7a*/
+    float: left; /*htkon 3ala el 4mal el sora*/
+    min-height: 100%; /* lazem a7otha 3lshen el sora tban ely fhemto anhy bta5od el min height men el section ely howa el height:400px*/
+}
+#home_info .info_content{
+    float: right; /* el na7ya el ymen*/
+    width: 50%;
+    height: 100%;
+    text-align: center;  /* el klam fe el nos fe el na7ya el ymen*/
+    padding: 50px 30px; /* top and botton 50 and left and right 30*/
+}
+/* Features Section*/
+#features .box{
+    display: inline-block; /* 5alet el icons gamb ba3ed*/
+    width: 33%;
+    padding: 50px;
+    text-align: center;
+}
+#features .box i{
+    margin-bottom: 10px;/* in the 4 sides(top , bottom , left , right) 10px*/
+    font-size: 40px;   /* the size of the icon*/
+}
+/*Footer*/
+#footer{
+    text-align: center;
+    background-color: #444;
+    color: #fff;
+    padding: 20px;
+}
+/*---------------------------About Page-----------------------*/
+/*Info section*/
+#about_info{
+    padding: 20px 0;
+}
+#about_info .info_right{
+    display: inline-block;
+    width: 50%;
+    min-height: 100%;
+}
+#about_info .info_right img{
+    display: block;
+    margin: auto;
+    width: 50%;
+    border-radius: 50%;
+}
+
+#about_info .info_left{
+    display: inline-block;
+    width: 49%;
+    min-height: 100%;
+    padding-top: 20px;
+}
+.l_heading{
+    font-size: 40px;
+}
+
+/*Testimonial Section*/
+#testimonials{
+    background-image: url('../img/about\ page\ 2.jpg');
+    background-size: cover;
+    height: 900px;
+    padding-top: 100px;
+}
+#testimonials h2{
+    color: #fff;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+#testimonials .testimonial{
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    opacity: 0.9;
+}
+#testimonials .testimonial img{
+    width: 60px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+/*---------------------------Contact Page-----------------------*/
+/*Form section*/
+#contact_form{
+    background-image: url(../img/contack.jpg);
+    background-size: cover;
+
+}
+#contact_form h1{
+    padding-top:20px;
+}
+#contact_form .form_group{
+    margin-bottom: 20px;
+}
+#contact_form .form_group label{
+    display: block;
+    margin-bottom: 5px;
+}
+#contact_form .form_group input,#contact_form .form_group textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+
+}
+#contact_form .form_group textarea{
+    height: 200px;
+}
+#contact_form .btn{
+margin-bottom: 20px; /* msa7a bara el btn 20px leo kont ktabt padding kan hyb2a msa7a gowa el btn 20px*/
+}
+
+
+
+
+
+
